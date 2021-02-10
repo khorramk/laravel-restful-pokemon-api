@@ -14,7 +14,7 @@ class CreatePokemonTable extends Migration
     public function up()
     {
         Schema::create('pokemon', function (Blueprint $table) {
-            $table->integer('id')->nullable();
+            $table->id();
             $table->string('name')->nullable();
             $table->integer('height')->nullable();
             $table->integer('weight')->nullable();
