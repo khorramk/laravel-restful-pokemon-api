@@ -10,7 +10,14 @@
 
 ## local testing
 
-    turn on task scheduling first by:
+    get a application key: 
+    running:
+    `php artisan key:generate`
+
+    Then do migration:
+    'php artisan migrate`
+
+    Finally turn on task scheduling first by:
     `php artisan pokemon:cron`
 
     This will run the schedule one time.
@@ -18,6 +25,12 @@
     more on scheduling:
 
     https://laravel.com/docs/8.x/scheduling#introduction
+
+    Then follow these steps:
+
+    1. npm install
+    2. npm run dev
+    3. php artisan serve or use xampp or any other preference
 
 
 ## deployment
