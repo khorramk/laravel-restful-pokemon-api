@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePokemonTable extends Migration
+class CreateUrlColumnOnPokemonTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreatePokemonTable extends Migration
      */
     public function up()
     {
-        Schema::create('pokemon', function (Blueprint $table) {
-            $table->id();
-            $table->string('name')->nullable();
-            $table->integer('height')->nullable();
-            $table->integer('weight')->nullable();
-            $table->timestamps();
+        Schema::table('pokemon', function (Blueprint $table) {
+            $table->string('url', 255)->nullable();
         });
     }
 
@@ -29,6 +25,8 @@ class CreatePokemonTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pokemon');
+        Schema::table('pokemon', function (Blueprint $table){
+            $table->string('url', 255)->nullable();
+        });
     }
 }
