@@ -21,8 +21,9 @@
         </style>
     </head>
     <body>
-        <div id="root">
+        <div id="root" class="container">
+            <pokemon-table></pokemon-table>
         </div>
-        <script src="./js/app.js"></script>
+        <script src="{{asset('/js/app.js')}}"></script>
     </body>
 </html>
