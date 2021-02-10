@@ -1,12 +1,12 @@
 require('./bootstrap');
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Vue from 'vue';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import PokemonTable from './src/PokemonTable.vue';
 
-new Vue({
+const app = new Vue({
     el: '#root',
-    template: 'hello',
     components: {
-        PokemonTable,
-    },
+        'pokemon-table': PokemonTable
+    }
 });
+
