@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    header('Access-Control-Allow-Origin');
     return view('welcome');
 });
