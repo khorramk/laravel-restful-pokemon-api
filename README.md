@@ -47,7 +47,8 @@ https://laravel.com/docs/8.x/deployment
 
 ## improvement
 
-we can do update the pokemon using crud way in table
-we can delete and add new pokemon functionality as a card
+- we can do update the pokemon using crud way in table.
+
+- we can delete and add new pokemon functionality as a card
 
 
